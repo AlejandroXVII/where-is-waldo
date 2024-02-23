@@ -162,10 +162,6 @@ body {
 	footer {
 	}
 	* {
-		div {
-			background-color: var(--clr-tertiary-bright);
-			box-shadow: var(--medium-shadow);
-		}
 		button {
 			color: var(--clr-principal);
 			background-color: var(--clr-tertiary-dark);

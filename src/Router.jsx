@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
+import FindWaldo from "./pages/FindWaldo";
 import ErrorPage from "./ErrorPage";
 
 const Router = () => {
@@ -9,10 +10,10 @@ const Router = () => {
 			element: <App />,
 			errorElement: <ErrorPage />,
 		},
-		/*{
-			path: "profile",
-			element: <Profile />,
-		},*/
+		{
+			path: "find-waldo",
+			element: <FindWaldo />,
+		},
 	]);
 
 	return <RouterProvider router={router} />;
