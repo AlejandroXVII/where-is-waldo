@@ -3,9 +3,14 @@
 	align-items: center;
 	justify-items: center;
 	img {
-		max-width: 95dvw;
+		max-width: calc(90vw - 60px);
 		cursor: crosshair;
+		border-radius: 20px;
+		border: 4px solid hsl(39, 100%, 70%);
 	}
+}
+body {
+	background-color: hsl(39, 100%, 93%);
 }
 .header {
 	display: flex;
@@ -43,5 +48,34 @@
 	nav {
 		transition: transform 0.2s ease-in-out;
 		transform: scaleY(1);
+	}
+}
+.characters-container {
+	margin: 1rem;
+	max-width: 60px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 1rem;
+	img {
+		max-width: inherit;
+	}
+}
+.game-container {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	.header {
+		grid-column: 1/-1;
+	}
+}
+.popup {
+	background-color: hsl(39, 100%, 93%);
+	border-bottom: 5px solid hsl(39, 100%, 65%);
+	padding: 1rem;
+	input {
+		height: 1.5rem;
 	}
 }

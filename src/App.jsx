@@ -1,13 +1,25 @@
-//import { Link } from "react-router-dom";
+import waldoSRC from "./assets/wally.png";
+import { useNavigate } from "react-router-dom";
+import "./styles/index.css";
 
 const App = () => {
+	const navigate = useNavigate();
 	return (
-		<div>
-			<h1>Hello from the main page of the app!</h1>
-			<p>EXAMPLE TEXT TO SHOW HOW IT SEEM</p>
+		<div className="home">
 			<div>
-				<button className="savedBtn">Accept</button>
-				<button>Cancel</button>
+				<img src={waldoSRC} alt="" />
+				<div className="tittle">
+					<h1>WHERE IS WALDO?</h1>
+					<p>
+						Try to find waldo, wizard and odlaw as soon as possible
+					</p>
+				</div>
+
+				<div>
+					<button onClick={() => navigate("/find-waldo")}>
+						PLAY NOW
+					</button>
+				</div>
 			</div>
 		</div>
 	);

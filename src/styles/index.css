@@ -177,3 +177,36 @@ body {
 		}
 	}
 }
+
+.tittle {
+	color: hsl(0, 65%, 48%);
+	h1 {
+		font-size: 3rem;
+	}
+	p {
+		font-weight: bold;
+	}
+}
+
+.home {
+	display: flex;
+	min-height: 100dvh;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	> div {
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+		img {
+			height: 300px;
+		}
+	}
+	button {
+		background: hsl(0, 76%, 37%);
+		border: 4px;
+		padding: 1rem 2rem;
+		border-radius: 10px;
+		color: white;
+	}
+}
