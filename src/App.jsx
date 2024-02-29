@@ -1,7 +1,7 @@
 import waldoSRC from "./assets/wally.png";
 import { useNavigate } from "react-router-dom";
 import "./styles/index.css";
-
+import Scores from "./pages/Scores";
 const App = () => {
 	const navigate = useNavigate();
 	return (
@@ -20,6 +20,7 @@ const App = () => {
 						PLAY NOW
 					</button>
 				</div>
+				<Scores />
 			</div>
 		</div>
 	);
