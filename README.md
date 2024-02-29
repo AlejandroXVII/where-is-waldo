@@ -1,6 +1,6 @@
 # Where's Waldo photo tagging app.
 
-###[API](https://github.com/AlejandroXVII/waldo-api)
+### [API](https://github.com/AlejandroXVII/waldo-api)
 
 ### Tools:
 - React
