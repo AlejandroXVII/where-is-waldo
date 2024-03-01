@@ -5,7 +5,7 @@ const Score = () => {
 	const [scores, setScores] = useState([]);
 	async function fetchScores() {
 		// Default options are marked with *
-		const response = await fetch(API_URL + "users/", {
+		const response = await fetch(API_URL + "/users/", {
 			method: "GET",
 		});
 		const scoresArray = await response.json();
