@@ -1,11 +1,11 @@
 import "../styles/index.css";
 import { useEffect, useState } from "react";
-
+import API_URL from "../assets/api-url";
 const Score = () => {
 	const [scores, setScores] = useState([]);
 	async function fetchScores() {
 		// Default options are marked with *
-		const response = await fetch("http://localhost:3000/users/", {
+		const response = await fetch(API_URL + "users/", {
 			method: "GET",
 		});
 		const scoresArray = await response.json();

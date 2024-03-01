@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Popup from "reactjs-popup";
 import Stopwatch from "../components/Watch";
+import API_URL from "../assets/api-url";
 
 const FindWaldo = () => {
 	const picRef = useRef(null);
@@ -28,7 +29,7 @@ const FindWaldo = () => {
 
 		// Default options are marked with *
 		const response = await fetch(
-			"http://localhost:3000/coordinates/" + character + "&" + x + "&" + y
+			API_URL + "/coordinates/" + character + "&" + x + "&" + y
 		);
 		const foundCharacter = await response.json();
 		console.log(foundCharacter);
@@ -37,7 +38,7 @@ const FindWaldo = () => {
 	}
 	async function registerUser() {
 		// Default options are marked with *
-		let result = await fetch("http://localhost:3000/users/", {
+		let result = await fetch(API_URL + "/users/", {
 			method: "POST",
 			mode: "cors",
 		});
@@ -47,7 +48,7 @@ const FindWaldo = () => {
 	}
 	async function postUserScore(userName) {
 		// Default options are marked with *
-		await fetch("http://localhost:3000/users/" + userIDRef.current, {
+		await fetch(API_URL + "/users/" + userIDRef.current, {
 			method: "POST",
 			headers: {
 				Accept: "application/json",
