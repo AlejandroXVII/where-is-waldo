@@ -1,3 +1,11 @@
-React template
+# Where's Waldo photo tagging app.
 
-include vest and router
+### [API](https://github.com/AlejandroXVII/waldo-api)
+
+### Tools:
+- React
+- Node.js
+- Express
+- Mongo DB
+
+### Live link: https://where-is-waldo.pages.dev/
