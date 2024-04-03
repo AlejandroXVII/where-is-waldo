@@ -1,4 +1,4 @@
-Where's Waldo photo tagging app.
+# Frontend Where's Waldo photo tagging app.
 
 ## 🔗 Links
 
